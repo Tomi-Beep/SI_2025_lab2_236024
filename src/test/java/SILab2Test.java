@@ -40,7 +40,7 @@ public class SILab2Test {
         List<Item> validItems2 = new ArrayList<>();
         validItems2.add(new Item("ValidItem", 5, 100, 0.0));
         try {
-            SILab2.checkCart(validItems2, "1111111111111111a");
+            SILab2.checkCart(validItems2, "11111111111111a1");
             Assertions.fail("Expected RuntimeException for invalid card character");
         } catch (RuntimeException e) {
             Assertions.assertEquals("Invalid character in card number!", e.getMessage());
